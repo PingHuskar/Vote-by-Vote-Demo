@@ -1,0 +1,137 @@
+body {
+    user-select: none;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+.container {
+    user-select: none;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+.board {
+    margin-bottom: 20vh;
+}
+button {
+    display: none;
+}
+form {
+    margin-top: 5vh;
+}
+a {
+    text-decoration: inherit;
+    user-select: none;
+}
+input {
+    user-select: none;
+    text-align: center;
+    font-size: 3rem;
+    width: 40%;
+    cursor: not-allowed;
+    cursor: none;
+    pointer-events:none;
+}
+span {
+    font-size: 3em;
+    font-weight: 600;
+    color: #555;
+}
+h1 {
+    color: #4c4c4c;
+    font-weight: 600;
+    border-bottom: 1px solid #ccc;
+    font-size: 3em;
+  }
+  
+  h2, h4 {
+    font-weight: 400;
+    color: #4d4d4d;
+  }
+  
+  .card {
+    display: inline-block;
+    margin: 10px;
+    background: #fff;
+    padding: 15px;
+    min-width: 200px;
+    max-width: 20vw;
+    box-shadow: 0 3px 5px #ddd;
+    color: #555;
+  }
+  .card .box {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background: #ddd;
+    cursor: pointer;
+    box-shadow: 0 0 5px #ccc inset;
+  }
+  .card .box .fill {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background: #03A9F4;
+    opacity: .5;
+    box-shadow: 0 0 5px #ccc;
+    transition: 0.3s;
+  }
+  .card p {
+    margin: 25px 0 0;
+  }
+  
+  .rotate:hover .fill {
+    transform: rotate(45deg);
+  }
+  
+  .rotateX:hover .fill {
+    transform: rotateX(45deg);
+  }
+  
+  .rotateY:hover .fill {
+    transform: rotateY(45deg);
+  }
+  
+  .rotateZ:hover .fill {
+    transform: rotate(45deg);
+  }
+  
+  .scale:hover .fill {
+    transform: scale(2, 2);
+  }
+  
+  .scaleX:hover .fill {
+    transform: scaleX(2);
+  }
+  
+  .scaleY:hover .fill {
+    transform: scaleY(2);
+  }
+  
+  .skew:hover .fill {
+    transform: skew(45deg, 45deg);
+  }
+  
+  .skewX:hover .fill {
+    transform: skewX(45deg);
+  }
+  
+  .skewY:hover .fill {
+    transform: skewY(45deg);
+  }
+  
+  .translate:hover .fill {
+    transform: translate(45px, 1em);
+  }
+  
+  .translateX:hover .fill {
+    transform: translateX(45px);
+  }
+  
+  .translateY:hover .fill {
+    transform: translateY(45px);
+  }
+  
+  .matrix:hover .fill {
+    transform: matrix(2, 2, 0, 2, 45, 0);
+  }

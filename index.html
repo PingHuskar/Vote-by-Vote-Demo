@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Live Vote Demo</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="moment.min.js"></script>
+</head>
+<body>
+	<!-- <form method="POST" action="https://script.google.com/macros/s/AKfycby2ZezZut6FpIHyzSAGtvclbru6ezvCgH6YIPyw1LdNaGXeNZyLmwKuIfj4TqUQeiSN/exec"> -->
+	<!-- <form method="POST" action="https://script.google.com/macros/s/AKfycbyMrUkPB07N6zAImiS092HsJxkEkieMlCveAFkSMQzQU_-PHyCOR75kmlQ4DnFsMIdD/exec"> -->
+	<form method="POST" action="https://script.google.com/macros/s/AKfycby65YeXvRM_C6orN5_MZHkczNXtU7yD5XMyYWBIz_tZyRrR33JWFo4I8s85xZPW3qU/exec">
+		<h1>[Election Name]</h1>
+		<div class="container">
+			<div class="board">
+				<div class="card">
+					<div class="box scale">
+					<img class="fill" style="opacity: 1;" src="image/1.jpg" onclick="document.getElementById('1').value=parseInt(document.getElementById('1').value)+1;updateTimestamp(this);">
+					</div>
+					<h3>หมายเลข 1</h3>
+					<input type="number" tabindex="-1" id="1" name="1" required value="1">
+			  	</div>
+				<div class="card">
+					<div class="box scale">
+					<img class="fill" style="opacity: 1;" src="image/2.jpg" onclick="document.getElementById('2').value=parseInt(document.getElementById('2').value)+1;updateTimestamp(this);">
+					</div>
+					<h3>หมายเลข 2</h3>
+					<input type="number" tabindex="-1" id="2" name="2" required value="1">
+			  	</div>
+			</div>
+			<a tabindex="-1"><span>Timestamp</span></a> <input type="text" tabindex="-1" id="timestamp" name="Timestamp" required><br>
+		</div>
+		<button type="submit" id="Submit" class="bg-success text-white" style="background-color:green">Submit</button>
+	</form>
+	<script src="script.js"></script>
+</body>
+</html>
